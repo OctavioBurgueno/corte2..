@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="/css/estilosIMC.css">
+</head>
+<body>
+    <header>
+        <center>
+        <h1>Calculo de Indice Masa Corporal</h1>
+        <h2>IMC</h2>
+    </center>
+    </header>
+    <section>
+        <header>
+        <center>
+            <h3>Datos de la persona</h3>
+        </center>
+    </header>
+    <br>
+    <br>
+    <center>
+        <label for="">Ingresa el peso en KG</label>
+    </center>
+    <input type="number" name="peso" id="peso" required><br>
+
+    <center>
+        <label for="">Ingresa la altura en m</label>    
+    </center>    
+    <input type="number" name="altura" id="altura"><br>
+
+    <br>
+
+    <center>
+        <label for="">Selecciona el sexo:</label>
+    </center>
+    <center>
+        <select id="sexo" name="sexo">
+    </center>
+    
+    <option value="hombre">Hombre</option>
+    <option value="mujer">Mujer</option>
+    </select><br>
+    
+    <center>
+        <label for="">Ingresa la edad:</label>
+    </center>
+    <input type="number" name="edad" id="edad" required><br>
+    <br>
+    <br>
+
+    <center>
+        <h2>Calculos</h2>
+    </center>
+    <br>
+    <br>
+
+    <center>
+        <label for="">IMC</label>
+    </center>
+
+    <center>
+        <input type="text" name="IMC" id="IMC" readonly><br>
+    </center>
+
+    <center>
+        <button id="btnCalcular">Calcular</button>
+    </center>
+
+     <!-- Contenedor para mostrar el mensaje del IMC -->
+     <p id="nivelIMC"></p>
+
+     <!-- Contenedor para mostrar la imagen del nivel del IMC -->
+     <img id="imagenNivel" src="" alt="">
+     
+    </section>
+</body>
+<script src="/js/imc.js"></script>
+</html>
